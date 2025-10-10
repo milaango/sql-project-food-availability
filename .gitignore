@@ -1,0 +1,17 @@
+virt_prostredi/
+venv/
+.ipynb_checkpoints/
+*.xlsx
+*.docx
+*.R
+*.txt
+!requirements.txt
+__pycache__/
+*.py[cod]
+*$py.class
+.DS_Store
+Thumbs.db
+.vscode/
+*.log
+*.tmp
+*.ipynb~
