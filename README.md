@@ -35,7 +35,7 @@ poznámka: informace o mzdách se týkají mezd přepočtených, aby se odstrani
 
 ### Sekundární tabulka 
 
-Sekundární tabulka `t_Milan_Angelis_project_SQL_secondary_final` je generována ve skriptu `Project_sql_secondary_table.sql` obsahuje informace o HDP, GINI koeficientu a populaci pro další evropské státy.
+Sekundární tabulka `t_Milan_Angelis_project_SQL_secondary_final` je generována ve skriptu `Project_sql_secondary_table.sql` a obsahuje informace o HDP, GINI koeficientu a populaci pro další evropské státy.
 
 ### Otázka č. 1
 
