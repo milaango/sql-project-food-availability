@@ -11,7 +11,7 @@ Projekt je zaměřen na extrakci a analýzu dat týkajících se dostupnosti pot
     - **primární tabulka** týkající se informací o mzdách a cenách potravin pro ČR za určité časové období
     - **sekundární** (dodatečná) **tabulka** obsahující HDP, GINI koeficient a populaci dalších evropských států pro stejné období
 -  K primární tabulce je následně nutno vytvořit SQL skripty s dotazy, které pomohou odpovědět na **5 výzkumných otázek**:
-    1. Rostou v průběhu let mzdy ve všech odvětvích, nebo v některch klesají?
+    1. Rostou v průběhu let mzdy ve všech odvětvích, nebo v některých klesají?
     2. Kolik je možné si koupit litrů mléka a kolik kilogramů chleba za první a poslední srovnatelné období v dostupných datech cen a mezd?
     3. Která kategorie potravin zdražuje nejpomaleji (je u ní nejnižší percentuální meziroční nárůst)?
     4. Existuje rok, ve kterém byl meziroční nárůst cen potravin výrazně vyšší než růst mezd (vyšší než 10 %)?
