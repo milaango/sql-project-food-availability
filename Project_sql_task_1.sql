@@ -1,4 +1,4 @@
--- Úkol 1: Rosotu v průběhu let mzdy ve všech odvětvích, nebo v některých klesají?
+-- Úkol 1: Rostou v průběhu let mzdy ve všech odvětvích, nebo v některých klesají?
 
 CREATE OR REPLACE VIEW v_Milan_Angelis_Project_sql_average_payroll AS (
 	SELECT
