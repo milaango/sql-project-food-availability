@@ -91,7 +91,7 @@ V druhé části úkolu byly srovnány jednotlivé kategorie potravin za každý
 
 Tímto způsobem bylo možné zjistit, které konkrétní kategorie potravin rostly rychleji než mzdy, i když celkový průměr neukazoval dramatický nárůst.
 
-Tato analýza ukázala, že existuje několik kategorií potravin, které vykázaly růst vyšší než 10 % oproti růstu mezd v průběhu let ve sledovaném období. Nejvíce kategorií potravin vykázalo růst oproti mezd v letech **2008** a **2010** (6 kategorií), z nichž v obou letech byl nejvyšší růst u  **pšeničné mouky hladké** (rozdíl 35,21 % (2008), respektive 28,14 % (2010)).
+Tato analýza ukázala, že existuje několik kategorií potravin, které vykázaly růst vyšší než 10 % oproti růstu mezd v průběhu let ve sledovaném období. Nejvíce kategorií potravin vykázalo růst oproti růstu mezd v letech **2008** a **2010** (6 kategorií), z nichž v obou letech byl nejvyšší růst u  **pšeničné mouky hladké** (rozdíl 35,21 % (2008), respektive 28,14 % (2010)).
 
 ### Otázka č. 5
 
