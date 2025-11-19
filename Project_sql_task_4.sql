@@ -9,7 +9,7 @@ CREATE OR REPLACE VIEW v_milan_angelis_project_sql_avg_growth_food_and_payroll_p
 		a."year",
 		ROUND(
 			((a.average_payroll::NUMERIC / 
-			(LAG(a.average_payroll) OVER (ORDER BY a."year")::NUMERIC))*100) - 100, 2
+			(LAG(a.average_payroll) OVER (ORDER BY a."year")))*100) - 100, 2
 		) AS percent_payroll_growth,
 		b.avg_percent_food_growth
 	FROM (
@@ -65,7 +65,7 @@ WITH differences_growth AS (
 			apay."year",
 			ROUND(
 				((apay.average_payroll::NUMERIC / 
-				(LAG(apay.average_payroll) OVER (ORDER BY apay."year")::NUMERIC))*100) - 100, 2
+				(LAG(apay.average_payroll) OVER (ORDER BY apay."year")))*100) - 100, 2
 			) AS percent_payroll_growth
 		FROM (
 			SELECT

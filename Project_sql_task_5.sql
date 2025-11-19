@@ -5,7 +5,7 @@
 
 SELECT
 	a."year",
-	ROUND((a.gdp::NUMERIC/(LAG(a.gdp) OVER (ORDER BY a."year")::NUMERIC) * 100 - 100), 2) AS gdp_percent_growth,
+	ROUND((a.gdp::NUMERIC/(LAG(a.gdp) OVER (ORDER BY a."year")) * 100 - 100), 2) AS gdp_percent_growth,
 	b.avg_percent_food_growth,
 	d.percent_payroll_growth
 FROM (

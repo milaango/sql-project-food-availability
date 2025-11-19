@@ -10,7 +10,7 @@ FROM (
 		cp.category_code::VARCHAR AS category_code,
 		cpc."name" AS category_name,
 		avg(cp.value) AS "value",
-		'0' AS is_payroll,
+		0 AS is_payroll,
 		NULL::NUMERIC AS gdp
 	FROM czechia_price cp
 	JOIN czechia_price_category cpc
@@ -30,7 +30,7 @@ FROM (
 		cpay.industry_branch_code AS category_code,
 		cpib.name AS category_name,
 		cpay.value AS value,
-		'1' AS is_payroll,
+		1 AS is_payroll,
 		NULL::NUMERIC AS gdp
 	FROM czechia_payroll cpay
 	JOIN czechia_payroll_industry_branch cpib
@@ -46,7 +46,7 @@ FROM (
 		NULL AS category_code,
 		NULL AS category_name,
 		NULL AS value,
-		'0' AS is_payroll,
+		0 AS is_payroll,
 		e.gdp::NUMERIC AS gdp
 	FROM economies e
 	WHERE country = 'Czech Republic'
@@ -55,3 +55,7 @@ FROM (
 )
 ORDER BY is_payroll
 );
+
+
+SELECT *
+FROM t_milan_angelis_project_sql_primary_final tmapsp;

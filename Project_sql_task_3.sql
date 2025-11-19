@@ -7,17 +7,17 @@ CREATE OR REPLACE VIEW v_milan_angelis_project_sql_food_percent_growth AS (
 	WITH filtered_food AS (
 		SELECT 
 			tp."year",
-			tp."category_name" AS category_name,
+			tp.category_name AS category_name,
 			tp.value AS price_current_year,
 			LAG(tp.value) OVER (
-				PARTITION BY tp."category_name"
+				PARTITION BY tp.category_name
 				ORDER BY tp."year"
 			) AS price_previous_year
 		FROM t_Milan_Angelis_project_SQL_primary_final tp
-		WHERE tp.is_payroll = '0'
+		WHERE tp.is_payroll = 0
 			AND tp.gdp IS NULL
 		ORDER BY 
-			tp."category_name",
+			tp.category_name,
 			tp."year"
 	)
 	SELECT

@@ -13,7 +13,7 @@ LEFT JOIN (
 		vpay."year",
 		ROUND(AVG(vpay.average_payroll::NUMERIC), 2) AS average_payroll
 	FROM v_Milan_Angelis_Project_sql_average_payroll vpay
-	WHERE vpay."year" IN ('2006', '2018')
+	WHERE vpay."year" IN (2006, 2018)
 	GROUP BY vpay."year"
 ) apay
 ON 
@@ -25,7 +25,7 @@ WHERE
 	tp.category_name ILIKE '%chléb%'
 	)
 	AND 
-	tp."year" IN ('2006', '2018')
+	tp."year" IN (2006, 2018)
 ORDER BY tp.category_name
 )
 SELECT
@@ -34,6 +34,6 @@ SELECT
 	ROUND(average_payroll::NUMERIC/commodity_price::NUMERIC) AS accessible_amount_of_commodity
 FROM comparison_prices_payroll
 ORDER BY 
-	"commodity",
+	commodity,
 	"year";
 

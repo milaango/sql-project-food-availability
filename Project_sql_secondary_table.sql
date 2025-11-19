@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS t_Milan_Angelis_project_sql_secondary_final AS (
 		FROM countries c
 		WHERE continent = 'Europe'
 	)
-	AND "year" >= '1990'
+	AND "year" >= 1990
 	ORDER BY
 		country,
 		"year"
